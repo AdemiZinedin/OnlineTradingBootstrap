@@ -5,10 +5,10 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #ffffff;
-  background-color: rgb(79, 79, 79);
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  color: #b16c6c;
+  background-color: rgb(255, 255, 255);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem black;
 }
 
 
@@ -99,10 +99,10 @@ body {
 
 .b-example-divider {
   height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
+  background-color: red;
+  border: rgb(255, 255, 255);
   border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  box-shadow: inset 0 .5em 1.5em rgba(255, 255, 255, 0.1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
 .b-example-vr {
@@ -152,3 +152,128 @@ body {
   color: rgb(255, 255, 255);
   border-bottom-color: #fff;
 }
+
+.rahmen {
+  width: 500px; /* Breite des Rahmens */
+  height: 500px; /* Höhe des Rahmens */
+  border: 2px solid ; /* Rahmenstil */
+  overflow: hidden; /* Bild wird im Rahmen beschnitten */
+  border: hidden;
+}
+
+/* CSS-Code für das Bild innerhalb des Rahmens */
+.rahmen img {
+  width: 100%; /* Bildbreite auf 100% des Rahmens setzen */
+  height: auto; /* Bildhöhe automatisch anpassen */
+  margin-top: 30px;
+  border-radius: 100px;
+}
+.rund {
+  width: 200px; /* Breite des Rahmens */
+  height: 200px; /* Höhe des Rahmens */
+  border: 2px solid black; /* Rahmenstil */
+  border-radius: 50%; /* Rundung des Rahmens auf 50% der Breite/Höhe */
+  overflow: hidden; /* Bild wird im Rahmen beschnitten */
+  margin-left: 110px;
+}
+
+/* CSS-Code für das Bild innerhalb des runden Rahmens */
+.rund img {
+  width: 100%; /* Bildbreite auf 100% des Rahmens setzen */
+  height: auto; /* Bildhöhe automatisch anpassen */
+  border-radius: 50%; /* Rundung des Bildes auf 50% der Breite/Höhe */
+}
+
+/* CSS styles for the header */
+.navbar {
+  background-color: #343a40;
+  position: relative;
+  border: 1px solid #343a40;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: #f4f4f4;
+  font-size: 24px;
+  font-family: "San Francisco", Arial, sans-serif;
+  transition: color 0.3s;
+  font-weight: 700;
+}
+
+.navbar-brand:hover {
+  color: #000000;
+}
+
+.navbar-toggler {
+  border-color: #000000;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-nav {
+  margin-right: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-family: "San Francisco", Arial, sans-serif;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transform: scaleX(0);
+  transition: transform 2s;
+  transform-origin: left;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link:hover:before {
+  transform: scaleX(1);
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+}
+
+.dropdown-item {
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "San Francisco", Arial, sans-serif;
+}
+
+.dropdown-item:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.color-of-the-carousel{
+  color: #000000;
+}
+
+
+
+
+
