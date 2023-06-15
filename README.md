@@ -16,7 +16,7 @@ The main risk is when someone is for a longer time not in school and only one pe
 The design of our website will be our first main task because we want to make it as modern as possible. ////////////////////
 ## Timeline
 - Project start: 15.10.2022
-- Project end: //
+- Project end: 15.06.2023
 ## Used Source Version Control System
 GitHub you can find all our files in the project repository
 
